@@ -11,9 +11,9 @@
     docker build -t tests --build-arg environment=QA .
     docker run tests
 ### Running gradle
-    ENV=QA gradle test -i --rerun-tasks 
+    ENV=QA gradle clean test -i
 ### Running gradle wrapper
-    ENV=QA ./gradlew test --i --rerun-tasks 
+    ENV=QA ./gradlew clean test --i 
 
 ## Environments
 * QA

@@ -10,4 +10,4 @@ COPY . /tests
 
 WORKDIR /tests
 
-CMD ["./gradlew", "test", "--i", "--rerun-tasks"]
+CMD ["./gradlew", "clean", "test", "--i"]
